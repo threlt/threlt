@@ -15,8 +15,8 @@ int main()
 
     int w;
         cout<<"\nWhat will i do, if: \n1 - addition; 2 - deduction; 3 - multix; 4 - division"<<endl;
-        cout<<"\nType here: ";
-            cin>>w;
+            cout<<"\nType here: ";
+                cin>>w;
 
                     if (w==1) {
                         result=first+second;
@@ -35,13 +35,80 @@ int main()
 
                     if (w==4) {
                             if (second!=0){
+                                result=first/second;
+
+                                cout<<first<<" / "<<second<< " = "<<result;
+                            }
+
+                            else {
+                                    cout<<"\nYou have to type another second numeral\n"<<"Your current numeral is: ";
+                                    cout<<second<<"\nType another here: ";
+                                        cin>>second;
+
+                                        if (second!=0){
                             result=first/second;
                             cout<<first<<" / "<<second<< " = "<<result;
+                            }
+
+                            while (second==0) {
+                                        cout<<"\nYou have to choose another numeral! \n";
+                                        cout<<"Type it here: ";
+                                            cin>>second;
+
+                                                if (second!=0){
+                            result=first/second;
+
+                            cout<<first<<" / "<<second<< " = "<<result;
+                            }
+                            }
                         }
-                                else {
-                                cout<<"Error!";
+
+
+
+    }
+                            while (w>4 || w<1){
+                                cout<<"\nYou have to choose correct do \n";
+                                    cout<<"1 - addition; 2 - deduction; 3 - multix; 4 - division\n";
+                                        cout<<"\nType it here: ";
+                                                    cin>>w;
+
+
+                                           if (w==4) {
+                            if (second!=0){
+                                result=first/second;
+
+                                cout<<first<<" / "<<second<< " = "<<result;
+                            }
+
+                            else {
+                                    cout<<"\nYou have to type another second numeral\n";
+                                        cout<<"Your current numeral is: ";
+                                            cout<<second<<"\nType another here: ";
+                                                    cin>>second;
+
+                                        if (second!=0){
+                            result=first/second;
+                            cout<<first<<" / "<<second<< " = "<<result;
+                            }
+
+                            while (second==0) {
+                                        cout<<"\nYou have to choose another numeral! \n";
+                                        cout<<"Type it here: ";
+                                            cin>>second;
+
+                                                if (second!=0){
+                            result=first/second;
+                                cout<<first<<" / "<<second<< " = "<<result;
+                                                              }
+                                                }
                                 }
 
-                    }
+
+
+            }
+
+
+            }
+
     return 0;
 }
