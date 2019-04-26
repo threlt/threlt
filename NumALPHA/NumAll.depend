@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1556297000 source:/home/thr/Code/C++/C3/NumAll/main.cpp
+	<iostream>
+	<math.h>
+
